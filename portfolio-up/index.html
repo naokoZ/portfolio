@@ -13,17 +13,31 @@
     <!-- ↓Abobe font -->
     <link rel="stylesheet" href="https://use.typekit.net/kvb4lrd.css">
   </head>
-  <body>
+
+  <body id="top">
     
     <!-- ヘッダー -->
     <header id="header-h1">
       <h1>HASHIMOTO NAO</h1>
+      <!-- PC用メニュー -->
       <nav id="header-nav">
         <ul id="nav-list">
           <li class="nav-item"><a href="#WORKS">WORKS</a></li>
           <li class="nav-item"><a href="#SKILL">SKILL</a></li>
           <li class="nav-item"><a href="#ABOUT">ABOUT</a></li>
         </ul>
+      </nav>
+      <!-- /PC用メニュー -->
+      <!-- スマホ用メニュー -->
+      <img id="sp-menu" src="img/menu.svg" alt="スマホ用メニューボタン" onclick="document.getElementById('sp-nav').style.display = 'block';">
+      <nav id="sp-nav">
+        <a id="hasimotologo" href="#top">HASHIMOTO<br>NAO</a>
+        <ul id="sp-nav-list">
+          <li class="sp-nav-item"><a href="#WORKS">WORKS</a></li>
+          <li class="sp-nav-item"><a href="#SKILL">SKILL</a></li>
+          <li class="sp-nav-item"><a href="#ABOUT">ABOUT</a></li>
+        </ul>
+        <img id="sp-nav-close" src="img/close.svg" alt="メニューを閉じる" onclick="document.getElementById('sp-nav').style.display = 'none'">
       </nav>
     </header>
     <!-- /ヘッダー -->
@@ -129,10 +143,9 @@
           <h2>CONTACT</h2>
           <p id="contact-info">お問い合わせはメールまたはSNSにてお願いいたします</p>
           <p id="e-mail">nao.ishi0227@gmail.com</p>
-          <img id="instalogo" src="img/icon_instagram.gif" alt="インスタグラムロゴ">
-
+          <img id="instalogo" src="img/icons8-インスタグラム.svg" alt="インスタグラムロゴ">
         </div>
-
+        <a href="#top"><img src="img/arrow.svg" alt="トップページへ戻る" id="gototop"></a>
       </div>
     </footer>
 
