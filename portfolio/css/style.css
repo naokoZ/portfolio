@@ -1,0 +1,545 @@
+body{
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* 共通　セクションタイトル */
+.section-title{
+  font-family: "futura-pt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  padding-top: 100px;
+}
+
+.section-title::before{
+  content: "−";
+}
+
+.section-title::after{
+  content: "−";
+}
+/* /共通　セクションタイトル */
+
+
+
+
+/* ヘッダー */
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: FBF9F1;
+}
+
+header > h1{
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  margin: 0;
+}
+
+#nav-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item a{
+  text-decoration:none; 
+}
+
+.nav-item a:link{
+  color: black;
+}
+
+.nav-item a:visited{
+  color: black;
+}
+
+.nav-item a:hover{
+  text-decoration: underline;
+}
+
+.nav-item{
+  font-family: "futura-pt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  list-style: none;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+/* スマホ用ハンバーガーメニュー設定 */
+@media screen and (min-width: 768px){
+  #sp-menu{
+    display: none;
+  }
+
+  #sp-nav{
+    display: none; 
+  }
+}
+/* /スマホ用ハンバーガーメニュー設定 */
+
+/* /ヘッダー */
+
+
+
+/* メインビジュアル */
+#main-visual{
+  aspect-ratio: 3 / 2;
+  width: 100%;
+  display: flex;
+  position: relative;
+  background-color: #F8F4EA;
+}
+
+#namecard{
+  width: 30%;
+  aspect-ratio: 1.654 / 1;
+  z-index: 20;
+  position: absolute;
+    bottom: 10%;
+    left: 10%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mv-img{
+  width: 60%;
+  aspect-ratio: 4 / 3;
+  z-index: 10;
+  position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+#nc-name{
+  font-family: "futura-pt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3.5vw;
+  margin: 0;
+}
+
+#nc-catchcopy{
+  font-size: 1.2vw;
+  margin: 0;
+}
+/* /メインビジュアル */
+
+
+/* WORKSセクション */
+#WORKS{
+  width: 100%;
+  background-color: #F8F4EA;
+}
+
+#works-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 10px 10px;
+  justify-content: space-around;
+  margin: 50px 50px 0 50px;
+}
+
+.works-figure{
+  width: 300px;
+  height: auto;
+  aspect-ratio: 2232 / 1592;
+  margin: 0 auto;
+  background-color: #E5E1DA;
+}
+
+.works-img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.works-name{
+  font-weight:bold;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.works-skill{
+  margin-top: 0;
+}
+
+.works-link{
+  text-decoration: none;
+}
+
+.works-link:link{
+  color: black;
+}
+
+.works-link:visited{
+  color: black;
+}
+/* /WORKSセクション */
+
+
+
+/* SKILLセクション */
+#SKILL{
+  width: 100%;
+  background-color: #F8F4EA;
+}
+
+#skill-table{
+  margin: 50px auto 0 auto;
+}
+
+#skill-table td{
+  padding: 30px 50px;
+}
+
+.skill-name{
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.skill-name::before{
+  content: "◼️";
+}
+/* /SKILLセクション */
+
+
+/* ABOUTセクション */
+#ABOUT{
+  width: 100%;
+  background-color: #F8F4EA;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#about-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+}
+
+#about-info{
+  margin: 50px;
+}
+
+#about-info > h3{
+  font-size: 1.8vw;
+}
+
+#about-info > p{
+  padding-top: 50px;
+  line-height: 3em;
+}
+
+#hashimoto{
+  width: 30%;
+  aspect-ratio: 3 / 4;
+  display: block;
+}
+
+/* /ABOUTセクション */
+
+
+/* フッター */
+footer h2{
+  font-family: "futura-pt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  margin: 0;
+  padding-top: 100px;
+}
+
+footer{
+  background: linear-gradient(#b9def0, white);
+  padding-bottom: 100px;
+}
+
+#footer-container{
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+#gototop{
+  width: 10%;
+  transform: rotate( 180deg );
+  position: absolute;
+    top: 40%;
+    right: 10%;
+}
+
+#footer-contact{
+  padding: 0 50px;
+}
+
+#contact-info{
+  font-size: 1.5vw;
+}
+
+#e-mail{
+  margin-top: 30px;
+  font-size: 1.4vw;
+}
+
+#instalogo{
+  width: 50px;
+}
+/* /フッター */
+
+
+
+/* スマホ用 */
+@media screen and (max-width: 767px){
+
+  /* PC用メニュー非表示 */
+  #header-nav{
+    display: none;
+  }
+
+  /* ハンバーガーメニュー */
+  #sp-nav{
+    display: none;
+    background-color: #F8F4EA;
+    position: fixed;
+      left: 0;
+      top: 0;
+    width: 100%;
+    height: 100dvh;
+    z-index:999;
+    text-align: center;
+  }
+
+  #hasimotologo{
+    font-family: "futura-pt", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    margin-top: 80px;
+    text-decoration: none;
+    display: block;
+  }
+
+  #hasimotologo:link{
+    color: black;
+  }
+
+  #hasimotologo:visited{
+    color: black;
+  }
+
+  #sp-nav-list{
+    padding: 30px 0 0 0;
+  }
+
+
+  .sp-nav-item{ 
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .sp-nav-item a{
+    text-decoration: none;
+  }
+
+  .sp-nav-item a{
+    color: black;
+  }
+
+  .sp-nav-item a{
+    color: black;
+  }
+
+  #sp-nav-close{
+    width: 15%;
+    position: absolute;
+      top: 10px;
+      right: 10px;
+  }
+
+
+  #nav-figure{
+    width: 80%;
+    position: absolute;
+      bottom: 5%;
+  }
+
+  #nav-img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+
+  /* /ハンバーガーメニュー */
+
+
+  /* メインビジュアル */
+  #main-visual{
+    width: 100%;
+        aspect-ratio: 4 / 5;
+  }
+
+  #mv-img{
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    z-index: 10;
+    position: absolute;
+      top: 10%;
+      right: 0;
+  }
+
+  #namecard{
+    width: 60%;
+    aspect-ratio: 1.654 / 1;
+    z-index: 20;
+    position: absolute;
+      left: 2%;
+      bottom: 7%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #nc-name{
+    font-size: 7vw;
+  }
+
+  #nc-catchcopy{
+    font-size: 2.8vw;
+  }
+  /* /メインビジュアル */
+
+
+ /* WORKSセクション */ 
+
+  #works-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .works-item{
+    display: block;
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .works-figure{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    margin: 0 auto;
+  }
+
+ /* /WORKSセクション */
+
+
+ /* SKILLセクション */
+  #skill-table{
+  margin: 0;
+}
+
+  #skill-table tr,
+  #skill-table td{
+    display: block;
+  }
+
+  #skill-table td{
+    padding: 10px 0 0 0;
+  }
+
+  #skill-table tr{
+    padding: 30px 30px;
+  }
+ /* /SKILLセクション */
+
+
+ /* ABOUTセクション */
+  #about-container{
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0;
+  }
+
+  #hashimoto{
+    width: 90%;
+    aspect-ratio: 3 / 4;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #about-info{
+    margin: 0 10px;
+  }
+  
+  #about-info > h3{
+    font-size: 5vw;
+  }
+  
+  #about-info > p{
+    padding-top: 0;
+    font-size: 3.8vw;
+    line-height: 1.5em;
+  }
+ /* /ABOUTセクション */
+
+
+  /* フッター */
+  footer h2{
+    padding-top: 30px;
+  }
+  
+  footer{
+    padding-bottom: 0px;
+  }
+  
+  #footer-container{
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  
+  #gototop{
+    width: 15%;
+    transform: rotate( 180deg );
+    position: absolute;
+      top: 30%;
+      right: 5%;
+  }
+  
+  #footer-contact{
+    padding: 0 5%;
+  }
+  
+  #contact-info{
+    font-size: 2.2vw;
+  }
+  
+  #e-mail{
+    margin-top: 0px;
+    font-size: 2vw;
+  }
+  
+  #instalogo{
+    width: 30px;
+  }
+
+
+
+
+}
