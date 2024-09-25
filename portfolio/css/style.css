@@ -1,8 +1,15 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
 body{
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -33,7 +40,10 @@ body{
 header{
   display: flex;
   justify-content: space-between;
-  background-color: FBF9F1;
+  background-color: white;
+  position: sticky;
+    top: 0;
+    z-index: 200;
 }
 
 header > h1{
@@ -49,15 +59,15 @@ header > h1{
   justify-content: space-between;
 }
 
-.nav-item a{
+header > h1 a,.nav-item a{
   text-decoration:none; 
 }
 
-.nav-item a:link{
+header > h1 a,.nav-item a:link{
   color: black;
 }
 
-.nav-item a:visited{
+header > h1 a,.nav-item a:visited{
   color: black;
 }
 
@@ -89,7 +99,7 @@ header > h1{
 /* /ヘッダー */
 
 
-
+/* トップページ */
 /* メインビジュアル */
 #main-visual{
   aspect-ratio: 3 / 2;
@@ -162,6 +172,7 @@ header > h1{
   width: 100%;
   height: 100%;
   object-fit: contain;
+  vertical-align: middle;
 }
 
 .works-name{
@@ -193,6 +204,7 @@ header > h1{
 #SKILL{
   width: 100%;
   background-color: #F8F4EA;
+  padding-bottom: 100px;
 }
 
 #skill-table{
@@ -218,7 +230,6 @@ header > h1{
 #ABOUT{
   width: 100%;
   background-color: #F8F4EA;
-  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -244,10 +255,10 @@ header > h1{
 
 #hashimoto{
   width: 30%;
+  height: auto;
   aspect-ratio: 3 / 4;
   display: block;
 }
-
 /* /ABOUTセクション */
 
 
@@ -297,6 +308,100 @@ footer{
   width: 50px;
 }
 /* /フッター */
+/* トップページここまで */
+
+
+
+/* WORKSページ */
+/* WORKSページ　共通 */
+
+.works-page{
+  background-color: #F8F4EA;
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-bottom: 200px;
+}
+
+.works-container{
+  width: 100%;
+  height: auto;
+}
+
+.works-about{
+  text-align: center;
+}
+
+.works-title{
+  margin: 0;
+  padding-top: 50px;
+}
+
+.works-overview{
+  margin: 0;
+}
+
+.works-detail{
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+.works-detail h3{
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin:50px auto 10px auto;
+}
+
+.works-detail p{
+  font-size: 1.2vw;
+  margin-top: 0;
+}
+
+.home-link{
+  display: block;
+  width: fit-content;
+  margin: 50px auto 0 auto;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  text-decoration:none; 
+}
+
+.home-link:link{
+  color: white;
+}
+
+.home-link:visited{
+  color: white
+}
+
+.gotoworkstop{
+  display: block;
+  width: 10%;
+  height: auto;
+  transform: rotate( 180deg );
+  position: absolute;
+    right: 5%;
+    bottom: 0%
+}
+
+/* socialtechページ */
+#socialtech-figure{
+  width: 100%;
+  height: auto;
+}
+
+#socialtech-figure{
+  margin: 60px auto;
+}
+
+#socialtech-img{
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 
 
@@ -309,6 +414,13 @@ footer{
   }
 
   /* ハンバーガーメニュー */
+
+#sp-menu{
+  width: 15%;
+  height: auto;
+}
+
+
   #sp-nav{
     display: none;
     background-color: #F8F4EA;
@@ -317,7 +429,7 @@ footer{
       top: 0;
     width: 100%;
     height: 100dvh;
-    z-index:999;
+    z-index:300;
     text-align: center;
   }
 
@@ -425,7 +537,6 @@ footer{
 
 
  /* WORKSセクション */ 
-
   #works-list{
     display: flex;
     flex-direction: column;
@@ -445,7 +556,6 @@ footer{
     aspect-ratio: 4 / 3;
     margin: 0 auto;
   }
-
  /* /WORKSセクション */
 
 
