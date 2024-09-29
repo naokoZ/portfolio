@@ -217,7 +217,11 @@ header > h1 a,.nav-item a:visited{
 
 .skill-name{
   font-weight:bold;
-  font-size: 20px;
+  font-size: 1.8vw;
+}
+
+.skill-info{
+  font-size: 1.3vw;
 }
 
 .skill-name::before{
@@ -241,11 +245,12 @@ header > h1 a,.nav-item a:visited{
 }
 
 #about-info{
-  margin: 50px;
+  padding: 50px;
 }
 
 #about-info > h3{
-  font-size: 1.8vw;
+  font-size: 2vw;
+  font-weight: bold;
 }
 
 #about-info > p{
@@ -253,11 +258,16 @@ header > h1 a,.nav-item a:visited{
   line-height: 3em;
 }
 
-#hashimoto{
+#hashimoto-figure{
   width: 30%;
   height: auto;
-  aspect-ratio: 3 / 4;
-  display: block;
+  aspect-ratio: 800 / 1201;
+}
+
+#hashimoto{
+  width: 100%;
+  height: auto;
+  
 }
 /* /ABOUTセクション */
 
@@ -287,7 +297,7 @@ footer{
   width: 10%;
   transform: rotate( 180deg );
   position: absolute;
-    top: 40%;
+    bottom: 25%;
     right: 10%;
 }
 
@@ -314,7 +324,6 @@ footer{
 
 /* WORKSページ */
 /* WORKSページ　共通 */
-
 .works-page{
   background-color: #F8F4EA;
   width: 100%;
@@ -341,11 +350,23 @@ footer{
   margin: 0;
 }
 
+.workspage-figure{
+  width: 60%;
+  height: auto;
+  margin: 60px auto;
+}
+
+#workspage-img{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .works-detail{
   width: 60%;
   margin: 0 auto;
 }
-
 
 .works-detail h3{
   font-size: 1.5vw;
@@ -386,22 +407,9 @@ footer{
     bottom: 0%
 }
 
-/* socialtechページ */
-#socialtech-figure{
-  width: 100%;
-  height: auto;
-}
 
-#socialtech-figure{
-  margin: 60px auto;
-}
 
-#socialtech-img{
-  width: 60%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
+
 
 
 
@@ -419,7 +427,6 @@ footer{
   width: 15%;
   height: auto;
 }
-
 
   #sp-nav{
     display: none;
@@ -454,7 +461,6 @@ footer{
   #sp-nav-list{
     padding: 30px 0 0 0;
   }
-
 
   .sp-nav-item{ 
     list-style: none;
@@ -493,8 +499,6 @@ footer{
     margin: 0 auto;
     width: 100%;
   }
-
-
   /* /ハンバーガーメニュー */
 
 
@@ -560,6 +564,10 @@ footer{
 
 
  /* SKILLセクション */
+  #SKILL{
+  padding-bottom: 0;
+}
+
   #skill-table{
   margin: 0;
 }
@@ -576,25 +584,46 @@ footer{
   #skill-table tr{
     padding: 30px 30px;
   }
+
+  .skill-name{
+    font-size: max(3.5vw, 20px);
+  }
+
+  .skill-info{
+    font-size: max(2.5vw, 15px);
+  }
+
+
  /* /SKILLセクション */
 
 
  /* ABOUTセクション */
+  #ABOUT{
+  padding-bottom: 20px;
+}
+
   #about-container{
     flex-direction: column;
     justify-content: center;
     margin: 50px 0;
   }
 
-  #hashimoto{
-    width: 90%;
-    aspect-ratio: 3 / 4;
-    display: block;
+
+  #hashimoto-figure{
     margin: 0 auto;
+    width: 80%;
+    height: auto;
+    aspect-ratio: 800 / 1201;
   }
   
+  #hashimoto{
+    width: 100%;
+    height: auto;
+  }
+
   #about-info{
     margin: 0 10px;
+    padding: 20px;
   }
   
   #about-info > h3{
@@ -603,7 +632,7 @@ footer{
   
   #about-info > p{
     padding-top: 0;
-    font-size: 3.8vw;
+    font-size: 3.5vw;
     line-height: 1.5em;
   }
  /* /ABOUTセクション */
@@ -615,7 +644,8 @@ footer{
   }
   
   footer{
-    padding-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   
   #footer-container{
@@ -628,7 +658,7 @@ footer{
     width: 15%;
     transform: rotate( 180deg );
     position: absolute;
-      top: 30%;
+      bottom: 5%;
       right: 5%;
   }
   
@@ -637,19 +667,41 @@ footer{
   }
   
   #contact-info{
-    font-size: 2.2vw;
+    font-size: max(2.2vw, 13px);
   }
   
   #e-mail{
     margin-top: 0px;
-    font-size: 2vw;
+    font-size: max(2vw, 15px);
   }
   
   #instalogo{
     width: 30px;
   }
 
+/* WORKSページ */
+/* WORKSページ　共通 */
+.works-detail{
+  width: 80%;
+  margin: 0 auto;
+}
 
+.works-detail h3{
+  font-size: 4.5vw;
+  font-weight: bold;
+  margin:50px auto 10px auto;
+}
+
+.works-detail p{
+  font-size: 3.5vw;
+  margin-top: 0;
+}
+
+.gotoworkstop{
+  position: absolute;
+    right: 5%;
+    bottom: 3%
+}
 
 
 }
